@@ -1,0 +1,28 @@
+========================================================================
+Experiment 3: Run Log Output Verification
+========================================================================
+
+$ ./redirection_pipes.sh
+
+=== Task 1: Date on Screen & Redirect 'who' to File ===
+Current Date and Time:
+Tue Nov  3 12:15:22 IST 2026
+-> Done! Active user details have been redirected to 'logged_users.txt'.
+
+$ cat logged_users.txt
+ubuntu   tty7         2026-11-03 09:30 (:0)
+
+=== Task 2: Swap First and Second Word using sed ===
+Original File Content:
+apple banana cherry
+linux ubuntu bash
+hello world greeting
+-----------------------------------
+Content after swapping 1st and 2nd word:
+banana apple cherry
+ubuntu linux bash
+world hello greeting
+
+========================================================================
+Execution Completed Successfully!
+========================================================================
