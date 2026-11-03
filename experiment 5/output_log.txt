@@ -1,0 +1,38 @@
+========================================================================
+Experiment 5: Command-Line Arguments Run Log Output
+========================================================================
+
+--- TASK 1 VERIFICATION (File vs Directory Check) ---
+
+$ ./check_type.sh
+Error: Please provide a file or directory path as an argument.
+Usage: ./check_type.sh <path>
+
+$ ./check_type.sh check_type.sh
+Result: 'check_type.sh' is a regular file.
+
+$ ./check_type.sh /home/ubuntu/experiment 5
+Result: '/home/ubuntu/experiment 5' is a directory.
+
+$ ./check_type.sh non_existent_file.txt
+Result: 'non_existent_file.txt' does not exist or is a different type of file.
+
+
+--- TASK 2 VERIFICATION (Filename to Uppercase) ---
+
+# Creating temporary lowercase files for testing
+$ touch demo1.txt test2.log
+
+$ ls
+check_type.sh  demo1.txt  test2.log  to_uppercase.sh
+
+$ ./to_uppercase.sh demo1.txt test2.log
+Successfully renamed: demo1.txt -> DEMO1.TXT
+Successfully renamed: test2.log -> TEST2.LOG
+
+$ ls
+check_type.sh  DEMO1.TXT  TEST2.LOG  to_uppercase.sh
+
+========================================================================
+Execution Verified Successfully!
+========================================================================
