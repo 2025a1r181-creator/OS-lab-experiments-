@@ -1,0 +1,9 @@
+$ gcc process_lifecycle.c -o lifecycle_app
+$ ./lifecycle_app
+
+[Parent Process] Current PID: 8120. Branching out via fork()...
+[Parent Process] Spawned child with PID: 8121. Standing by via wait()...
+[Child Process] Hello! My assigned PID is: 8121
+[Child Process] Doing task work and exiting...
+(3 Seconds Pause...)
+[Parent Process] Logged termination of Child PID: 8121. Parent shutting down safely.
