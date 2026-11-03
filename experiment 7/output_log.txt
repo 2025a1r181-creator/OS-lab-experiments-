@@ -1,0 +1,26 @@
+=== Experiment 7: Timing and Comparison Verification ===
+
+--- 1. Running Shell Script with Time utility ---
+$ time ./string_ops.sh
+Shell Script Results:
+Original String: WelcomeToLinuxOperatingSystemLab
+Length: 32
+Substring (9,5): Linux
+
+real    0m0.003s
+user    0m0.001s
+sys     0m0.002s
+
+--- 2. Compiling and Running C Program with Time utility ---
+$ gcc string_ops.c -o string_ops_c
+$ time ./string_ops_c
+C Program Results:
+Original String: WelcomeToLinuxOperatingSystemLab
+Length: 32
+Substring (9,5): Linux
+
+real    0m0.001s
+user    0m0.000s
+sys     0m0.001s
+
+Conclusion: C Program executes faster than the Shell Script.
