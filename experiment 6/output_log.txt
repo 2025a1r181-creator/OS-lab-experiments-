@@ -1,0 +1,24 @@
+=== Experiment 6: Run Log Output Verification ===
+
+--- Task 1: User Period Check ---
+$ ./user_period.sh ubuntu
+User 'ubuntu' is currently logged in.
+Logged in since: 2026-11-03 09:30
+
+--- Task 2: Display Range of Lines ---
+# Creating a 5-line sample file
+$ printf "Line1\nLine2\nLine3\nLine4\nLine5\n" > test.txt
+$ ./display_lines.sh 2 4 test.txt
+--- Displaying lines 2 to 4 from test.txt ---
+Line2
+Line3
+Line4
+
+--- Task 3: Delete Lines Containing Word ---
+$ ./delete_word.sh Line3 test.txt
+Deleted lines containing 'Line3' from test.txt
+$ cat test.txt
+Line1
+Line2
+Line4
+Line5
