@@ -1,0 +1,35 @@
+========================================================================
+Experiment 4: Process Management Log Verification
+========================================================================
+
+$ ./process_demo.sh
+
+=== 1. Displaying Active Processes (ps command) ===
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 09:30 ?        00:00:02 /sbin/init
+root           2       0  0 09:30 ?        00:00:00 [kthreadd]
+ubuntu      2145    2130  0 10:15 pts/0    00:00:00 bash
+
+=== 2. Displaying System Resource Usage snapshot ===
+top - 12:25:14 up  2:55,  1 user,  load average: 0.08, 0.04, 0.01
+Tasks: 118 total,   1 running, 117 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.5 us,  0.5 sy,  0.0 ni, 98.0 id,  0.0 wa,  0.0 hi,  0.0 si
+MiB Mem :   3935.2 total,   2154.0 free,    642.1 used,   1139.1 buff/cache
+
+=== 3. Monitoring Processes by User ===
+Processes owned by current user (ubuntu):
+    PID TTY          TIME CMD
+   2145 pts/0    00:00:00 bash
+   4612 pts/0    00:00:00 process_demo.sh
+
+=== 4. Background Process Demonstration ===
+Started a background process 'sleep 30' with PID: 4615
+Checking job status:
+[1]+  Running                 sleep 30 &
+
+Terminating the background process using kill command...
+Process 4615 has been terminated successfully.
+
+========================================================================
+Execution Completed Successfully!
+========================================================================
