@@ -1,0 +1,19 @@
+========================================================================
+Linux Text Editors Cheat Sheet (vi and nano)
+========================================================================
+
+1. NANO EDITOR (Beginner Friendly)
+----------------------------------
+* Open/Create File : nano filename.txt
+* Save File        : Ctrl + O (Then press Enter)
+* Exit Editor      : Ctrl + X
+* Search Text      : Ctrl + W
+
+2. VI EDITOR (Advanced Modal Editor)
+------------------------------------
+* Open/Create File : vi filename.txt
+* Command Mode     : Default mode upon opening (Press Esc to return here)
+* Insert Mode      : Press 'i' key (To start typing text)
+* Save and Exit    : Press 'Esc', then type ':wq' and press Enter
+* Exit Without Save: Press 'Esc', then type ':q!' and press Enter
+========================================================================
