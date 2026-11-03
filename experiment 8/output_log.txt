@@ -1,0 +1,17 @@
+========================================================================
+Experiment 8: Inter-Process Communication (IPC) Output Log
+========================================================================
+
+# Compiling the C program using gcc compiler
+$ gcc ipc_pipe.c -o ipc_pipe
+
+# Executing the compiled binary code
+$ ./ipc_pipe
+
+[Parent]: Waiting to receive message from Child...
+[Child]: Sending message to Parent process...
+[Parent]: Message successfully received: "Hello Parent! This message is from your Child process via Pipe."
+
+========================================================================
+Execution and Process Communication Completed Successfully!
+========================================================================
