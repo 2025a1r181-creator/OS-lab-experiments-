@@ -1,0 +1,13 @@
+==========================================
+   UBUNTU SYSTEM VERIFICATION SUCCESSFUL   
+==========================================
+Operating System Details:
+Linux ubuntu 5.15.0-generic #54-Ubuntu SMP
+
+Ubuntu Version:
+PRETTY_NAME="Ubuntu 22.04 LTS"
+
+System Memory Status:
+               total        used        free
+Mem:           3.9Gi       1.2Gi       2.1Gi
+==========================================
